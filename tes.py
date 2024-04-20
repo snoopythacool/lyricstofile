@@ -1,0 +1,1 @@
+print("e\n\n\n\n\n\ne".split("\n\n\n"))
