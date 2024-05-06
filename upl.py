@@ -4,9 +4,9 @@ import os
 
 SOURCE_FOLDER_NAME = "/Users/jihookim/Documents/OmegaT/Documents/source/"
 
-ARTIST_NAME = "Future & Metro Boomin"
-ALBUM_NAME = "We Still Dont Trust You"
-ALBUM_ID = "westilldonttrustyou"
+ARTIST_NAME = "Blur"
+ALBUM_NAME = "Parklife"
+ALBUM_ID = "parklife"
 
 token = "NU6mwVH_r0WjygRUu4-Vbl1Y2TWUsKsLXJQ881mPBF4DQljDxQV0hK4ZTOd-yOpl"
 genius = lyricsgenius.Genius(token)

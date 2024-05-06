@@ -1,11 +1,11 @@
 import os
 
-PRIMARY_COLOR = "#D9BF41"
-SECONDARY_COLOR = "#3370A6"
-ARTIST_NAME = "Concrete Boys"
-ALBUM_NAME = "It's Us Vol.1"
-ALBUM_ID = "itsusvol1"
-COVER_URL = "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e6/45/0e/e6450ed1-7db9-8183-bc81-e62c453495c7/24BMR0005196.rgb.jpg/600x600bb.jpg"
+PRIMARY_COLOR = "#F2D027"
+SECONDARY_COLOR = "#262223"
+ARTIST_NAME = "Blur"
+ALBUM_NAME = "Parklife"
+ALBUM_ID = "parklife"
+COVER_URL = "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8a/71/66/8a71664b-3baa-537b-e008-b32d86da27bc/5099997227755.jpg/600x600bb.jpg"
 
 TARGET_FOLDER_NAME = "/Users/jihookim/Documents/OmegaT/Documents/target/"
 SOURCE_FOLDER_NAME = "/Users/jihookim/Documents/OmegaT/Documents/source/"

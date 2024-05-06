@@ -1,11 +1,13 @@
 import json
 import os
+import datetime
 
-PRIMARY_COLOR = "#D9BF41"
-SECONDARY_COLOR = "#3370A6"
-ARTIST_NAME = "Concrete Boys"
-ALBUM_NAME = "It's Us Vol.1"
-ALBUM_ID = "itsusvol1"
+PRIMARY_COLOR = "#F2D027"
+SECONDARY_COLOR = "#262223"
+ARTIST_NAME = "Blur"
+ALBUM_NAME = "Parklife"
+ALBUM_ID = "parklife"
+VERSION = 1
 
 TARGET_FOLDER_NAME = "/Users/jihookim/Documents/OmegaT/Documents/target/"
 SOURCE_FOLDER_NAME = "/Users/jihookim/Documents/OmegaT/Documents/source/"
@@ -42,12 +44,12 @@ class Album():
         fres += f'<p style="text-align:center;"><img alt="{ALBUM_NAME}" width=600 src="../static/imgs/{ALBUM_ID}.jpeg" /></p>&nbsp;' + '<hr />' + '<p>&nbsp;</p>'
 
         for i in range(len(self.tracks_eng)):
-            fres += f'<p style="text-align:right;">{i+1}. {self.tracks_eng[i]} ({self.tracks_kor[i]})</p>'
+            fres += f'<p style="text-align:right;">{i+1}. {self.tracks_eng[i]} ({self.tracks_kor[i]}) <a class="goto" href="#{self.tracks_eng[i]}">GO</a></p>'
         fres += '<p>&nbsp;</p>'
 
         # Track
         for i in range(len(self.tracks_eng)):
-            fres += f'<hr />' + '<p>&nbsp;</p>'
+            fres += f'<hr id="{self.tracks_eng[i]}" />' + '<p>&nbsp;</p>'
             fres += f'<p><strong><span style="color:{SECONDARY_COLOR};"><span style="background-color:{PRIMARY_COLOR};">{i+1}. {self.tracks_eng[i]} <u>({self.tracks_kor[i]})</u></strong></p>' + '<p>&nbsp;</p>'
             
             # Phrase
@@ -109,4 +111,4 @@ with open(RESULT_FOLDER_NAME + ALBUM_ID + "_wp.html", "w") as fw:
     )
 
 with open(RESULT_FOLDER_NAME + ALBUM_ID + "_dt.json", "w") as fw:
-    json.dump({ALBUM_ID: {"id": ALBUM_ID, "name": ALBUM_NAME, "artist": ARTIST_NAME, "cover": ALBUM_ID + ".jpeg"}}, fw)
+    json.dump({ALBUM_ID: {"id": ALBUM_ID, "name": ALBUM_NAME, "artist": ARTIST_NAME, "cover": ALBUM_ID + ".jpeg", "time": str(datetime.datetime.now()), "version": VERSION, "primary": PRIMARY_COLOR, "secondary": SECONDARY_COLOR}}, fw)
