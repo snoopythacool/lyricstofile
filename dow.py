@@ -57,7 +57,7 @@ class Album():
                 # Line
                 for k in range(len(self.lyrics_kor[i][j])):
                     fres += f'{self.lyrics_eng[i][j][k].replace("-", "&mdash;")}<br />'
-                    fres += f'<u><em>{self.lyrics_kor[i][j][k].replace("-", "&mdash;")}</em></u><br />'
+                    fres += f'<u>{self.lyrics_kor[i][j][k].replace("-", "&mdash;")}</u><br />'
                 fres += '</p>'
             fres += '<p>&nbsp;</p>'
         fres += '<p>&nbsp;</p>'

@@ -4,11 +4,11 @@ import os
 
 SOURCE_FOLDER_NAME = "/Users/jihookim/Documents/OmegaT/Documents/source/"
 
-ARTIST_NAME = "Blur"
-ALBUM_NAME = "Parklife"
-ALBUM_ID = "parklife"
+ARTIST_NAME = "Phoebe Bridgers"
+ALBUM_NAME = "Punisher"
+ALBUM_ID = "modernlifeisrubbish"
 
-token = "NU6mwVH_r0WjygRUu4-Vbl1Y2TWUsKsLXJQ881mPBF4DQljDxQV0hK4ZTOd-yOpl"
+token = os.environ['TOKEN']
 genius = lyricsgenius.Genius(token)
 
 album = genius.search_album(ALBUM_NAME, ARTIST_NAME)
